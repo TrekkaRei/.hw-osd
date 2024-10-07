@@ -1,6 +1,6 @@
 Hardware On Screen Display showing GPU/CPU/MEM usage and temperature.
 
-How to download: git clone https://github.com/TrekkaRei/.hw-osd.git
+How to download (requires git): git clone https://github.com/TrekkaRei/.hw-osd.git
 
 Requires:
 
