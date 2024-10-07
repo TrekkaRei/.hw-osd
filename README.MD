@@ -1,4 +1,4 @@
-Hardware On Screen Display showing GPU/CPU/MEM usage.
+Hardware On Screen Display showing GPU/CPU/MEM usage and temperature.
 
 Requires:
 
