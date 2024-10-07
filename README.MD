@@ -1,4 +1,5 @@
 Hardware On Screen Display showing GPU/CPU/MEM usage and temperature.
+
 How to download (requires git): git clone https://github.com/TrekkaRei/.hw-osd.git
 
 Move .hw-osd to user root. Example: "/home/user/.hw-osd".
