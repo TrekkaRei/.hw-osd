@@ -11,6 +11,6 @@ memusage=$(fastfetch --logo none | grep RAM | awk '{print $2}')
 
 # other variables
 see=$(echo C)
-giga=$(echo GB)
+giga=$(echo GiB)
 
-echo " GPU:[$gpuusage% $gputemp$see]   CPU:[$cpuusage% $cputemp$see]   MEM:[$memusage$giga]"
+echo " GPU:[$gpuusage% $gputemp$see]  CPU:[$cpuusage% $cputemp$see]  MEM:[$memusage $giga]"

@@ -1,5 +1,4 @@
-#!/bin/bash
 # geometry is based off of 2560x1440 screen
 
-gnome-terminal --geometry=47x1+2112+15 -t "hardware osd" -- ~/.hw-osd/watchosd.sh
+gnome-terminal --geometry=47x1+2100+15 -t "hardware osd" -- ~/.hw-osd/watchosd.sh
 xprop -name 'hardware osd' -f _MOTIF_WM_HINTS 32c -set _MOTIF_WM_HINTS "0x2, 0x0, 0x2, 0x0, 0x0"
