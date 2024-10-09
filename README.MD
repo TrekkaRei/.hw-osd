@@ -4,7 +4,7 @@ How to download (requires git): git clone https://github.com/TrekkaRei/.hw-osd.g
 
 Move .hw-osd to user root. Example: "/home/user/.hw-osd".
 
-Required software: Top, nvidia-smi, lm-sensors, fastfetch, gnome-terminal.
+Required software: Top, nvidia-smi, lm-sensors, gnome-terminal.
 
 IMPORTANT!! Main.sh is the MAIN executable.
 
