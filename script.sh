@@ -13,4 +13,4 @@ memusage=$(inxi -c | grep Mem | cut -d':' -f2 | cut -c 2-6 | cut -d'.' -f1)
 see=$(echo °C)
 mega=$(echo MB)
 
-echo "GPU:[$gpuusage% $gputemp$see] CPU:[$cpuusage% $cputemp$see] RAM:[$memusage $mega]"
+echo " GPU:[$gpuusage% $gputemp$see] CPU:[$cpuusage% $cputemp$see] RAM:[$memusage $mega]"
