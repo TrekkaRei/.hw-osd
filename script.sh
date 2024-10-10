@@ -3,7 +3,7 @@ gpuusage=$(nvidia-smi -q | grep -w "Gpu" | awk '{print $3}')
 gputemp=$(inxi -s | grep temp: | cut -d' ' -f11)
 
 # CPU variables
-cpuusage=$(top -i -bn 1 | grep '%Cpu' | awk '{print 100-$8}')
+cpuusage=$(top -bn 1 | grep %Cpu | awk '{print 101-$8}')
 cputemp=$(inxi -s | grep ures: | cut -d' ' -f6 | cut -c 1-2)
 
 # Memory variable
