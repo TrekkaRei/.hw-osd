@@ -1,6 +1,6 @@
 # GPU variables
-gpuusage=$(nvidia-smi -q | grep -w "Gpu" | awk '{print $3}')
-gputemp=$(inxi -s | grep temp: | cut -d' ' -f11)
+gpuusage=$(cat /sys/class/drm/card1/device/gpu_busy_percent)
+gputemp=$(sensors | grep edge: | cut -c 16-17)
 
 # CPU variables
 cpuusage=$(top -bn 1 | grep %Cpu | awk '{print 101-$8}')
@@ -13,4 +13,4 @@ memusage=$(inxi -c | grep Mem | cut -d':' -f2 | cut -c 2-6 | cut -d'.' -f1)
 see=$(echo °C)
 mega=$(echo MB)
 
-echo " GPU:[$gpuusage% $gputemp$see] CPU:[$cpuusage% $cputemp$see] RAM:[$memusage $mega]"
+echo "GPU:[$gpuusage% $gputemp$see] CPU:[$cpuusage% $cputemp$see] RAM:[$memusage $mega]"
